@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sst xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" count="12" uniqueCount="12">
+  <si>
+    <t>ABC News</t>
+  </si>
+  <si>
+    <t>CBN News</t>
+  </si>
+  <si>
+    <t>CBS News</t>
+  </si>
+  <si>
+    <t>CNBC News</t>
+  </si>
+  <si>
+    <t>CNN</t>
+  </si>
+  <si>
+    <t>CNN All-Politics</t>
+  </si>
+  <si>
+    <t>C-Span</t>
+  </si>
+  <si>
+    <t>Fox News</t>
+  </si>
+  <si>
+    <t>MSNBC</t>
+  </si>
+  <si>
+    <t>PBS NewsHour</t>
+  </si>
+  <si>
+    <t>links</t>
+  </si>
+  <si>
+    <t>other</t>
+  </si>
+</sst>

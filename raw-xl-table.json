@@ -1,0 +1,42 @@
+[
+  [
+    { "Ref": "A2", "Value": "ABC News", "Header": "links" },
+    { "Ref": "B2", "Value": "1", "Header": "other" }
+  ],
+  [
+    { "Ref": "A3", "Value": "CBN News", "Header": "links" },
+    { "Ref": "B3", "Value": "2", "Header": "other" }
+  ],
+  [
+    { "Ref": "A4", "Value": "CBS News", "Header": "links" },
+    { "Ref": "B4", "Value": "3", "Header": "other" }
+  ],
+  [
+    { "Ref": "A5", "Value": "CNBC News", "Header": "links" },
+    { "Ref": "B5", "Value": "4", "Header": "other" }
+  ],
+  [
+    { "Ref": "A6", "Value": "CNN", "Header": "links" },
+    { "Ref": "B6", "Value": "5", "Header": "other" }
+  ],
+  [
+    { "Ref": "A7", "Value": "CNN All-Politics", "Header": "links" },
+    { "Ref": "B7", "Value": "6", "Header": "other" }
+  ],
+  [
+    { "Ref": "A8", "Value": "C-Span", "Header": "links" },
+    { "Ref": "B8", "Value": "7", "Header": "other" }
+  ],
+  [
+    { "Ref": "A9", "Value": "Fox News", "Header": "links" },
+    { "Ref": "B9", "Value": "8", "Header": "other" }
+  ],
+  [
+    { "Ref": "A10", "Value": "MSNBC", "Header": "links" },
+    { "Ref": "B10", "Value": "9", "Header": "other" }
+  ],
+  [
+    { "Ref": "A11", "Value": "PBS NewsHour", "Header": "links" },
+    { "Ref": "B11", "Value": "10", "Header": "other" }
+  ]
+]

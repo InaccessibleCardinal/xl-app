@@ -1,0 +1,82 @@
+[
+  {
+    "headline": "ABC News",
+    "link.headline": "http://www.abcnews.com/",
+    "link.more": "https://stackoverflow.com/questions/62652236/can-i-have-a-function-to-check-if-a-key-is-in-a-map",
+    "more": "Can I have a function to check if a key is in a map?",
+    "other": "1",
+    "random": "r1"
+  },
+  {
+    "headline": "CBN News",
+    "link.headline": "http://www.cbn.org/",
+    "link.more": "https://stackoverflow.com/questions/47212564/check-if-a-value-exists-in-a-map-in-golang",
+    "more": "Check if a value exists in a map in Golang - Stack Overflow",
+    "other": "2",
+    "random": "r2"
+  },
+  {
+    "headline": "CBS News",
+    "link.headline": "http://cbsnews.cbs.com/",
+    "link.more": "https://stackoverflow.com/questions/38435810/go-checking-if-key-of-one-map-present-in-another",
+    "more": "go - checking if key of one map present in another [duplicate]",
+    "other": "3",
+    "random": "r3"
+  },
+  {
+    "headline": "CNBC News",
+    "link.headline": "http://www.cnbc.com/",
+    "link.more": "https://stackoverflow.com/questions/70557883/check-if-key-exists-in-map-storing-large-values",
+    "more": "Check if key exists in map storing large values - Stack Overflow",
+    "other": "4",
+    "random": "r4"
+  },
+  {
+    "headline": "CNN",
+    "link.headline": "http://cnn.com/",
+    "link.more": "https://www.google.com/search?q=golang+check+if+key+in+map+site:stackoverflow.com\u0026sa=X\u0026ved=2ahUKEwjZl4K9z9n8AhVll2oFHVhzAZQQrQIoBHoECA8QBQ",
+    "more": "More results from stackoverflow.com",
+    "other": "5",
+    "random": "r5"
+  },
+  {
+    "headline": "CNN All-Politics",
+    "link.headline": "http://cnn.com/ALLPOLITICS/index.html",
+    "link.more": "https://stackoverflow.com/questions/62652236/can-i-have-a-function-to-check-if-a-key-is-in-a-map",
+    "more": "Can I have a function to check if a key is in a map?",
+    "other": "6",
+    "random": "r6"
+  },
+  {
+    "headline": "C-Span",
+    "link.headline": "http://www.c-span.org/",
+    "link.more": "https://stackoverflow.com/questions/47212564/check-if-a-value-exists-in-a-map-in-golang",
+    "more": "Check if a value exists in a map in Golang - Stack Overflow",
+    "other": "7",
+    "random": "r7"
+  },
+  {
+    "headline": "Fox News",
+    "link.headline": "http://www.foxnews.com/",
+    "link.more": "https://stackoverflow.com/questions/38435810/go-checking-if-key-of-one-map-present-in-another",
+    "more": "go - checking if key of one map present in another [duplicate]",
+    "other": "8",
+    "random": "r8"
+  },
+  {
+    "headline": "MSNBC",
+    "link.headline": "http://www.msnbc.com/",
+    "link.more": "https://stackoverflow.com/questions/70557883/check-if-key-exists-in-map-storing-large-values",
+    "more": "Check if key exists in map storing large values - Stack Overflow",
+    "other": "9",
+    "random": "r9"
+  },
+  {
+    "headline": "PBS NewsHour",
+    "link.headline": "http://www.pbs.org/newshour/",
+    "link.more": "https://www.google.com/search?q=golang+check+if+key+in+map+site:stackoverflow.com\u0026sa=X\u0026ved=2ahUKEwjZl4K9z9n8AhVll2oFHVhzAZQQrQIoBHoECA8QBQ",
+    "more": "More results from stackoverflow.com",
+    "other": "10",
+    "random": "r10"
+  }
+]

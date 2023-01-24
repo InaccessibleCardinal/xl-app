@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"
+  xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="x14ac xr xr2 xr3"
+  xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"
+  xmlns:xr="http://schemas.microsoft.com/office/spreadsheetml/2014/revision"
+  xmlns:xr2="http://schemas.microsoft.com/office/spreadsheetml/2015/revision2"
+  xmlns:xr3="http://schemas.microsoft.com/office/spreadsheetml/2016/revision3" xr:uid="{3F5C7051-A773-124C-8194-6261E7405F9D}">
+  <dimension ref="A1:B11"/>
+  <sheetViews>
+    <sheetView tabSelected="1" workbookViewId="0">
+      <selection activeCell="B9" sqref="B9"/>
+    </sheetView>
+  </sheetViews>
+  <sheetFormatPr baseColWidth="10" defaultRowHeight="16" x14ac:dyDescent="0.2"/>
+  <sheetData>
+    <row r="1" spans="1:2" x14ac:dyDescent="0.2">
+      <c r="A1" s="2" t="s">
+        <v>10</v>
+      </c>
+      <c r="B1" t="s">
+        <v>11</v>
+      </c>
+    </row>
+    <row r="2" spans="1:2" x14ac:dyDescent="0.2">
+      <c r="A2" s="1" t="s">
+        <v>0</v>
+      </c>
+      <c r="B2">
+        <v>1</v>
+      </c>
+    </row>
+    <row r="3" spans="1:2" x14ac:dyDescent="0.2">
+      <c r="A3" s="1" t="s">
+        <v>1</v>
+      </c>
+      <c r="B3">
+        <v>2</v>
+      </c>
+    </row>
+    <row r="4" spans="1:2" x14ac:dyDescent="0.2">
+      <c r="A4" s="1" t="s">
+        <v>2</v>
+      </c>
+      <c r="B4">
+        <v>3</v>
+      </c>
+    </row>
+    <row r="5" spans="1:2" x14ac:dyDescent="0.2">
+      <c r="A5" s="1" t="s">
+        <v>3</v>
+      </c>
+      <c r="B5">
+        <v>4</v>
+      </c>
+    </row>
+    <row r="6" spans="1:2" x14ac:dyDescent="0.2">
+      <c r="A6" s="1" t="s">
+        <v>4</v>
+      </c>
+      <c r="B6">
+        <v>5</v>
+      </c>
+    </row>
+    <row r="7" spans="1:2" x14ac:dyDescent="0.2">
+      <c r="A7" s="1" t="s">
+        <v>5</v>
+      </c>
+      <c r="B7">
+        <v>6</v>
+      </c>
+    </row>
+    <row r="8" spans="1:2" x14ac:dyDescent="0.2">
+      <c r="A8" s="1" t="s">
+        <v>6</v>
+      </c>
+      <c r="B8">
+        <v>7</v>
+      </c>
+    </row>
+    <row r="9" spans="1:2" x14ac:dyDescent="0.2">
+      <c r="A9" s="1" t="s">
+        <v>7</v>
+      </c>
+      <c r="B9">
+        <v>8</v>
+      </c>
+    </row>
+    <row r="10" spans="1:2" x14ac:dyDescent="0.2">
+      <c r="A10" s="1" t="s">
+        <v>8</v>
+      </c>
+      <c r="B10">
+        <v>9</v>
+      </c>
+    </row>
+    <row r="11" spans="1:2" x14ac:dyDescent="0.2">
+      <c r="A11" s="1" t="s">
+        <v>9</v>
+      </c>
+      <c r="B11">
+        <v>10</v>
+      </c>
+    </row>
+  </sheetData>
+  <hyperlinks>
+    <hyperlink ref="A2" r:id="rId1" display="http://www.abcnews.com/" xr:uid="{8DFAF1ED-A65F-484A-9093-D6B3929157BC}"/>
+    <hyperlink ref="A3" r:id="rId2" display="http://www.cbn.org/" xr:uid="{24648AC1-CE91-B146-A8AB-91079216E93A}"/>
+    <hyperlink ref="A4" r:id="rId3" display="http://cbsnews.cbs.com/" xr:uid="{609636A7-90FC-9444-9953-A6AE456DF5BD}"/>
+    <hyperlink ref="A5" r:id="rId4" display="http://www.cnbc.com/" xr:uid="{8146DA69-6AF9-454A-8164-37A91DE234CB}"/>
+    <hyperlink ref="A6" r:id="rId5" display="http://cnn.com/" xr:uid="{C3345D66-BDC3-3542-BEF8-FABD0EAAF57B}"/>
+    <hyperlink ref="A7" r:id="rId6" display="http://cnn.com/ALLPOLITICS/index.html" xr:uid="{ABCD06D6-C4ED-9642-BA4E-710011D8B972}"/>
+    <hyperlink ref="A8" r:id="rId7" display="http://www.c-span.org/" xr:uid="{EEF4BF9A-63F9-7B42-89BB-D62571A8915F}"/>
+    <hyperlink ref="A9" r:id="rId8" display="http://www.foxnews.com/" xr:uid="{A3A71F3C-CA63-7C49-B914-D3E4D841031F}"/>
+    <hyperlink ref="A10" r:id="rId9" display="http://www.msnbc.com/" xr:uid="{A706EE5A-4158-114C-940C-09F572A3E92E}"/>
+    <hyperlink ref="A11" r:id="rId10" display="http://www.pbs.org/newshour/" xr:uid="{57FBF069-A1FC-6E47-8B17-E99E48844A2A}"/>
+  </hyperlinks>
+  <pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+</worksheet>
