@@ -63,8 +63,9 @@ func (a *App) RenderApp() {
 		}
 		a.service.SaveEntity(values)
 	})
+
 	tabs := CreateTabs(TabsConfig{
-		"upload file with text": &widget.Form{
+		"upload file": &widget.Form{
 			Items: uploadEntries,
 			OnSubmit: func() {
 				SubmitBulkUpload("testing")
