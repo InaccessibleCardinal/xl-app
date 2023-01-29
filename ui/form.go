@@ -4,7 +4,7 @@ import "fyne.io/fyne/v2/widget"
 
 type Fields []string
 
-func CreateForm(fields Fields, onSubmit func(args ...string)) *widget.Form {
+func CreateForm(fields Fields, onSubmit func(formValues ...string)) *widget.Form {
 	var formItems []*widget.FormItem
 	var formEntries []*widget.Entry
 	for _, field := range fields {
@@ -16,6 +16,8 @@ func CreateForm(fields Fields, onSubmit func(args ...string)) *widget.Form {
 		var argsToReturn []string
 		for _, ent := range formEntries {
 			argsToReturn = append(argsToReturn, ent.Text)
+			ent.SetText("")
+			ent.Refresh()
 		}
 		onSubmit(argsToReturn...)
 	}}
