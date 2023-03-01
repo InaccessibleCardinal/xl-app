@@ -1,6 +1,7 @@
 package ui
 
 import (
+	"fmt"
 	"xl-app/svc"
 	"xl-app/xl"
 
@@ -15,11 +16,13 @@ var fields = []string{"database name", "keywords"}
 
 type App struct {
 	service *svc.DynamoService
+	xlDto   svc.XLDto
 }
 
 func NewApp(s *svc.DynamoService) *App {
 	return &App{
 		service: s,
+		xlDto:   svc.XLDto{},
 	}
 }
 
@@ -35,16 +38,24 @@ func (a *App) makeFileHandler(win fyne.Window) func() {
 			fileUri := uc.URI()
 			println(fileUri.Path())
 			result := xl.ProcessXL(fileUri.Path())
-			println("ui receiving results:")
-			xl.LogJson(result)
+			println("ui receiving results...")
+			a.xlDto.XlData = result
 
 		}, win)
 		fd.Show()
 	}
 }
 
-func SubmitBulkUpload(s string) {
-	print(s)
+func (a *App) SubmitBulkUpload() {
+	a.service.SaveEntity(a.xlDto)
+}
+
+func (a *App) createDbNameEntry() *widget.Entry {
+	entry := widget.NewEntry()
+	entry.OnChanged = func(value string) {
+		a.xlDto.DbName = value
+	}
+	return entry
 }
 
 func (a *App) RenderApp() {
@@ -52,7 +63,7 @@ func (a *App) RenderApp() {
 	win := xlApp.NewWindow("excel app")
 
 	fileFormItem := widget.NewFormItem("select a file", FileUpload(a.makeFileHandler(win)))
-	fileTextFormItem := widget.NewFormItem("name your database", widget.NewEntry())
+	fileTextFormItem := widget.NewFormItem("name your database table", a.createDbNameEntry())
 	uploadEntries := []*widget.FormItem{fileFormItem, fileTextFormItem}
 
 	form := CreateForm(fields, func(args ...string) {
@@ -60,15 +71,18 @@ func (a *App) RenderApp() {
 		for i, arg := range args {
 			fieldToUpdate := fields[i]
 			values[fieldToUpdate] = arg
+			fmt.Printf("field: %s", fieldToUpdate)
 		}
-		a.service.SaveEntity(values)
 	})
 
 	tabs := CreateTabs(TabsConfig{
 		"upload file": &widget.Form{
 			Items: uploadEntries,
 			OnSubmit: func() {
-				SubmitBulkUpload("testing")
+				if a.xlDto.DbName == "" || a.xlDto.XlData == nil {
+					return
+				}
+				a.SubmitBulkUpload()
 			},
 		},
 		"search the database": form,

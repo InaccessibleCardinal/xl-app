@@ -1,26 +1,28 @@
 package svc
 
-import "encoding/json"
+import (
+	"encoding/json"
+	"fmt"
+	"xl-app/db"
+)
 
-type ServiceResponse struct {
-	IsOk  bool
-	Value string
-	Error error
+type DynamoService struct {
+	db *db.Db
 }
-
-type DynamoService struct{}
 
 func logJson(st any) {
 	jn, _ := json.Marshal(st)
 	println(string(jn))
 }
 
-func NewDynamoService() *DynamoService {
-	return &DynamoService{}
+func NewDynamoService(db *db.Db) *DynamoService {
+	return &DynamoService{db: db}
 }
 
-func (d *DynamoService) SaveEntity(stringMap map[string]string) ServiceResponse {
-	logJson(stringMap)
+func (d *DynamoService) SaveEntity(xlDto XLDto) ServiceResponse {
+	fmt.Println("service SaveEntity called...")
+	logJson(xlDto)
+	d.db.CreateTable(xlDto.DbName)
 	return ServiceResponse{
 		IsOk:  true,
 		Value: "mock response...figure this out later",
