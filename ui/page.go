@@ -1,8 +1,8 @@
 package ui
 
 import (
-	"fmt"
 	"xl-app/svc"
+	"xl-app/types"
 	"xl-app/xl"
 
 	"fyne.io/fyne/v2"
@@ -16,13 +16,13 @@ var fields = []string{"database name", "keywords"}
 
 type App struct {
 	service *svc.DynamoService
-	xlDto   svc.XLDto
+	xlDto   types.XLDto
 }
 
 func NewApp(s *svc.DynamoService) *App {
 	return &App{
 		service: s,
-		xlDto:   svc.XLDto{},
+		xlDto:   types.XLDto{},
 	}
 }
 
@@ -71,7 +71,6 @@ func (a *App) RenderApp() {
 		for i, arg := range args {
 			fieldToUpdate := fields[i]
 			values[fieldToUpdate] = arg
-			fmt.Printf("field: %s", fieldToUpdate)
 		}
 	})
 

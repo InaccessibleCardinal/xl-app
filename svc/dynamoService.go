@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"xl-app/db"
+	"xl-app/types"
 )
 
 type DynamoService struct {
@@ -19,20 +20,33 @@ func NewDynamoService(db *db.Db) *DynamoService {
 	return &DynamoService{db: db}
 }
 
-func (d *DynamoService) SaveEntity(xlDto XLDto) ServiceResponse {
+func (d *DynamoService) SaveEntity(xlDto types.XLDto) types.ServiceResponse {
 	fmt.Println("service SaveEntity called...")
 	logJson(xlDto)
-	d.db.CreateTable(xlDto.DbName)
-	return ServiceResponse{
+	if err := d.db.CreateTable(xlDto.DbName); err != nil {
+		return types.ServiceResponse{
+			IsOk:  false,
+			Error: err,
+		}
+	}
+
+	err := d.db.BulkSave(xlDto)
+	if err != nil {
+		return types.ServiceResponse{
+			IsOk:  false,
+			Error: err,
+		}
+	}
+	return types.ServiceResponse{
 		IsOk:  true,
-		Value: "mock response...figure this out later",
+		Value: "good mock response...figure this out later",
 		Error: nil,
 	}
 }
 
-func (d *DynamoService) BulkMigration(name string, json string) ServiceResponse {
+func (d *DynamoService) BulkMigration(name string, json string) types.ServiceResponse {
 	println(json)
-	return ServiceResponse{
+	return types.ServiceResponse{
 		IsOk:  true,
 		Value: "mock response...no idea yet...",
 		Error: nil,
